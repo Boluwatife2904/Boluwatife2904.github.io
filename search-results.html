@@ -11,18 +11,164 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
+  <style>
+    .blog-entries .blog-entry .blog-content-body {
+      padding: 20px;
+      border: 1px solid #efefef;
+      border-top: none;
+    }
+
+    .blog-entries .blog-entry img {
+      max-width: 100%;
+    }
+
+    .blog-entries .blog-entry h2 {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .blog-entries .blog-entry p {
+      font-size: 13px;
+      color: gray;
+    }
+
+    .blog-entries .post-meta {
+      margin-bottom: 20px;
+      color: #b3b3b3;
+    }
+
+    a {
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: #000;
+      font-family: "Josefin Sans", arial, sans-serif;
+    }
+
+    .category {
+      display: inline-block;
+      background: #007bff;
+      padding: 2px 8px;
+      line-height: 1.5;
+      font-size: 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      color: #fff !important;
+      margin-right: 10px;
+    }
+
+    .a-block {
+      display: block;
+      background-size: cover;
+      background-position: center center;
+      padding: 30px;
+      position: relative;
+      margin-bottom: 30px;
+      height: 300px;
+    }
+
+    .a-block.height-lg {
+      height: 500px;
+    }
+
+    .a-block.height-md {
+      height: 400px;
+    }
+
+    .a-block:before {
+      background: #000;
+      position: absolute;
+      content: "";
+      z-index: 1;
+      opacity: .3;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .a-block .text {
+      position: relative;
+      z-index: 2;
+      max-width: 100%;
+    }
+
+    .a-block .text.half-to-full {
+      max-width: 50%;
+    }
+
+    .site-section {
+      padding: 2em 0;
+    }
+
+    .site-section.py-md {
+      padding: 1em 0;
+    }
+
+    .site-section.py-sm {
+      padding: 0em 0;
+    }
+  </style>
+
 </head>
 
 <body>
 
 
 
-  <h1>Search Results Page</h1>
+  <section class="site-section py-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="mb-4 text-success">Search Results for "{{search_term}}"</h2>
+          <!-- <h4>Results found for Keyword</h4> -->
+        </div>
+      </div>
+      <div class="row blog-entries">
+        <div class="col-md-12 col-lg-8 main-content">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                <img src="image.png" alt="Image placeholder">
+                <div class="blog-content-body">
+                  <div class="post-meta">
+                    <span class="category">Category</span> &bullet;
+                    <span class="category">Author</span> &bullet;
+                    <span class="category mr-2">Date</span> &bullet;
+                    <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                  </div>
+                  <h2>Title of Post</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                    aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                    minima asperiores. Consequatur ipsum rem sint!</p>
+                </div>
+              </a>
+            </div>
+            <!-- <p class='d-block font-weight-light my-2 heading'> No results was found </p> -->
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae delectus facere non quaerat distinctio adipisci
-    esse suscipit nobis minus excepturi ipsam libero tempore nihil obcaecati quam eaque quod dignissimos error,
-    architecto nesciunt fugiat molestias incidunt qui. Quasi provident architecto at nihil, iusto laborum fugiat autem
-    ipsum possimus eos quo mollitia?</p>
+
+
+          </div>
+          <!-- Main Section ends-->
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
