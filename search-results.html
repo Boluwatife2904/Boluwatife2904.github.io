@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
 
   <style>
     .blog-entries .blog-entry .blog-content-body {
@@ -120,70 +120,379 @@
       padding: 1em 0;
     }
 
+    .logo img {
+      width: 120px;
+    }
+
+    .navbar p {
+      font-size: 2rem;
+      color: #213DCD;
+    }
+
+    .menu a {
+      font-size: 1.5rem;
+      color: #213DCD;
+    }
+
+    .menu li {
+      padding-left: 2.5rem;
+    }
+
+    .fa-bars {
+      color: #000000;
+    }
+
+    .button-signup {
+      background-color: #213DCD;
+      border: none;
+      box-shadow: none;
+      color: #ffffff;
+      padding: 6px;
+      font-size: 1.5rem;
+      width: 150px;
+      margin-left: 2.5rem;
+    }
+
     .site-section.py-sm {
       padding: 0em 0;
     }
+
+    #footer {
+  background-color: #213DCD;
+  margin-top: 30px;
+  padding-top: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+.links {
+  padding-top: 20px;
+}
+
+.quick-links li {
+  list-style-type: none;
+  padding-top: 5px;
+}
+
+.quick-links li:first-child {
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.main-body .fas,
+.main-body .fab {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.icons-row {
+  padding: 0 3rem;
+}
+
+.icons-row a {
+  color: #333;
+}
+
+.icons-row a:hover {
+  color: #555;
+}
+
+.secondrow-content {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.secondrow-content > * {
+  margin-bottom: 1rem;
+}
+
+.quick-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-links a span {
+  color: #ffffff;
+  letter-spacing: 20px;
+}
+
+.blog-entries .blog-entry {
+  display: block;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.blog-entries .blog-entry:hover, .blog-entries .blog-entry:focus {
+  opacity: .7;
+  top: -1px;
+  -webkit-box-shadow: 0 3px 50px -2px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 3px 50px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.copyright p {
+  padding-top: 10px;
+  color: #ffffff;
+  font-size: 12px; 
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 30px;
+    }
+    #footer {
+      margin-top: 150px;
+      padding-top: 10px;
+      height: 450px;
+      width: 100%;
+   }
+    .social-links {
+      margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .input-group {
+      width: 100%;
+      margin-left: 12%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .input-group {
+    width: 120%;
+    margin-left: 4%;
+  }
+}
+
   </style>
 
 </head>
 
 <body>
 
-
-
-  <section class="site-section py-sm">
+  <div id="wrapper">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="mb-4 text-success">Search Results for "{{search_term}}"</h2>
-          <!-- <h4>Results found for Keyword</h4> -->
+      <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand logo">
+          <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+            alt="WikiPoli Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto menu">
+            <!-- Show post only if user is authenticated -->
+
+            <!-- <li class="nav-item active">
+                  <a class="nav-link " href="#"><strong>Post</strong></a>
+                </li> -->
+
+            <!-- Show users name too if they're authenticated -->
+
+            <li class="nav-item active">
+              <!-- This should link to user's dashboard -->
+              <a class="nav-link user-name-link" href="#"><strong>John Doe</strong></a>
+            </li>
+
+            <!-- Show login if user is not authenticated -->
+
+            <!-- <li class="nav-item">
+                  <a class="nav-link" href="#"><strong>Login</strong></a>
+                </li> -->
+          </ul>
+          <button type="submit" class="button-signup">Posts</button>
         </div>
-      </div>
-      <div class="row blog-entries">
-        <div class="col-md-12 col-lg-8 main-content">
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                <img src="image.png" alt="Image placeholder">
-                <div class="blog-content-body">
-                  <div class="post-meta">
-                    <span class="category">Category</span> &bullet;
-                    <span class="category">Author</span> &bullet;
-                    <span class="category mr-2">Date</span> &bullet;
-                    <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
-                  </div>
-                  <h2>Title of Post</h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
-                    aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
-                    minima asperiores. Consequatur ipsum rem sint!</p>
-                </div>
-              </a>
-            </div>
-            <!-- <p class='d-block font-weight-light my-2 heading'> No results was found </p> -->
-
-
-
-          </div>
-          <!-- Main Section ends-->
-        </div>
-      </div>
+      </nav>
     </div>
-  </section>
+
+
+
+    <section class="site-section py-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="mb-4 text-success">Search Results for "KeyWord"</h2>
+            <!-- <h4>Results found for Keyword</h4> -->
+          </div>
+        </div>
+        <div class="row blog-entries">
+          <div class="col-md-12 col-lg-12 main-content">
+            <div class="row">
+              <div class="col-md-4 my-3">
+                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <img src="image.png" alt="Image placeholder">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Category</span> &bullet;
+                      <span class="category">Author</span> &bullet;
+                      <span class="category mr-2">Date</span> &bullet;
+                      <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                    </div>
+                    <h2>Title of Post</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                      aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                      minima asperiores. Consequatur ipsum rem sint!</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 my-3">
+                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <img src="image.png" alt="Image placeholder">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Category</span> &bullet;
+                      <span class="category">Author</span> &bullet;
+                      <span class="category mr-2">Date</span> &bullet;
+                      <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                    </div>
+                    <h2>Title of Post</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                      aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                      minima asperiores. Consequatur ipsum rem sint!</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 my-3">
+                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <img src="image.png" alt="Image placeholder">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Category</span> &bullet;
+                      <span class="category">Author</span> &bullet;
+                      <span class="category mr-2">Date</span> &bullet;
+                      <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                    </div>
+                    <h2>Title of Post</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                      aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                      minima asperiores. Consequatur ipsum rem sint!</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 my-3">
+                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <img src="image.png" alt="Image placeholder">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Category</span> &bullet;
+                      <span class="category">Author</span> &bullet;
+                      <span class="category mr-2">Date</span> &bullet;
+                      <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                    </div>
+                    <h2>Title of Post</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                      aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                      minima asperiores. Consequatur ipsum rem sint!</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 my-3">
+                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <img src="image.png" alt="Image placeholder">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Category</span> &bullet;
+                      <span class="category">Author</span> &bullet;
+                      <span class="category mr-2">Date</span> &bullet;
+                      <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                    </div>
+                    <h2>Title of Post</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                      aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                      minima asperiores. Consequatur ipsum rem sint!</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 my-3">
+                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <img src="image.png" alt="Image placeholder">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Category</span> &bullet;
+                      <span class="category">Author</span> &bullet;
+                      <span class="category mr-2">Date</span> &bullet;
+                      <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                    </div>
+                    <h2>Title of Post</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                      aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                      minima asperiores. Consequatur ipsum rem sint!</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
 
+ <footer>
+      <div id="footer">
+        <div class="container">
+          <div class="row links">
+            <div class="col-lg-6 text-center">
+              <ul class="quick-links">
+                <li>Support</li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Donations</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 text-center">
+              <ul class="quick-links">
+                <li>Company</li>
+                <li><a href="">About</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Tour</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center social-links">
+              <a href="facebook.com"><span class="fab fa-2x fa-facebook"></span></a>
+              <a href="twitter.com"><span class="fab fa-2x fa-twitter"></span></a>
+              <a href="instagram.com"><span class="fab fa-2x fa-instagram"></span></a>
+              <a href="pintrest.com"><span class="fab fa-2x fa-pinterest"></span></a>
+              <a href="linkedin.com"><span class="fab fa-2x fa-linkedin"></span></a>
+            </div>
+            <div class="col-lg-12 copyright text-center">
+              <p>&copy; 2019 Wikipoli - All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
