@@ -10,12 +10,12 @@ body{
 
 /* BEGINNING HEADER SECTION */
 .header{
-    /* background: #D1F0F6; */
+    background: #F6FBF6;
     padding: 20px 20px 50px 20px;
 }
 
 .header nav img{
-    height: 50px;
+    height: 40px;
 }
 
 .header nav li a{
@@ -48,51 +48,25 @@ body{
 }
 
 
-.header h2{
-    font-family: 'Open Sans', sans-serif;    
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 54px;
-    text-align: center;
-    color: #084482;
-    margin-top: 120px;
-    margin-bottom: 30px;
-}
 
-.header p{
-    font-family: 'Open Sans', sans-serif;    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 33px;
-    text-align: center;
-    color: #474747;
-}
 /* END OF HEADER SECTION */
 
 .client p{
-    font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-color: #777777;
+    font-size: 18px;
+    line-height: 25px;
+    color: #777777;
 }
 
-.link p{
-    font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-color: #49A347;
+.link a{
+    font-size: 18px;
+    line-height: 25px;
+    color: #49A347;
 }
 
 .brief p{
-    font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 150.2%;
-color: #777777;
+    font-size: 18px;
+    line-height: 150.2%;
+    color: #777777;
 }
 
 
@@ -102,10 +76,10 @@ color: #777777;
 }
 .headings h3{
     font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 33px;
-color: #333333;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
 }
 
 img.center{
@@ -114,15 +88,16 @@ img.center{
     margin-right: auto;
 }
 
+.gatepass{
+    background: #F6FBF6;
+}
 
 .gatepass h3{
     margin-top: 70px;
-
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 54px;
-color: #49A347;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    color: #49A347;
 }
 
 .ready{
@@ -142,7 +117,7 @@ color: #275B92;
 hr{
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -164,19 +139,6 @@ cursor: pointer;
 margin: 30px 0;
 }
 
-
-.darkish{
-    padding: 8px;
-    line-height: 8px;
-    background: #8898AA;
-}
-
-.darkish p{
-font-size: 18px;
-line-height: 27px;
-text-align: center;
-color: #FFFFFF;
-}
 /* STYLING FOOTER SECTION */
 .footer{
     padding: 50px;
@@ -197,12 +159,10 @@ color: #FFFFFF;
 }
 
 .footer strong{
-    font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 25px;
-
-color: #00AEFF;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #00AEFF;
 }
 
 .footer .social{
@@ -239,6 +199,19 @@ color: #00AEFF;
     color: #737373;
 }
 
+.darkish{
+    padding: 8px;
+    line-height: 8px;
+    background: #8898AA;
+}
+
+.darkish p{
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #FFFFFF;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -250,15 +223,29 @@ a:hover{
         padding-left: 10px;
     }
 
+    .gatepass h3{
+        margin-top: 0;
+    }
+
+    .ready h3{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .footer img {
+        height: 50%;
+    }
+
     .footer h2{
-        font-size: 22px;
+        font-size: 20px;
+        margin-bottom: 5px;
     }
 
     .footer li a{
         font-size: 16px;
     }
 
-    .footer p{
+    .footer p, .darkish p{
         font-size: 16px;
     }
 }
@@ -280,4 +267,58 @@ a:hover{
     .footer p{
         font-size: 16px;
     }
+}
+
+
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.activ, .dot:hover {
+  background-color: #00AEFF;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }

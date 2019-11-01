@@ -15,7 +15,7 @@ body{
 }
 
 .header nav img{
-    height: 50px;
+    height: 40px;
 }
 
 .header nav li a{
@@ -241,7 +241,6 @@ a:hover{
     .header{
         padding-left: 10px;
     }
-
     .footer h2{
         font-size: 22px;
     }

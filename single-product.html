@@ -53,7 +53,7 @@
                 <div class="col-md-4 col-lg-4">
                     <h3>GatePass</h3>
                     <p>Manage Your guests peacefully</p>
-                    <a href="#"><img src="img/BUTTON.png" class="mt-3" alt=""></a>
+                    <a href="#"><img src="img/BUTTON.png" class="mt-3 mb-5" alt=""></a>
                 </div>
                 <div class="col-md-1 col-lg-2"></div>
                 <div class="col-md-7 col-lg-6 ">
@@ -62,22 +62,24 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
+
 
     <div class="container headings">
         <div class="row">
-            <div class="col-lg-3 col-md-6 client">
+            <div class="col-lg-3 col-md-6 mt-2 client">
                 <h3>Client</h3>
                 <p>Hotels.ng</p>
             </div>
-            <div class="col-lg-3 col-md-6 link">
+            <div class="col-lg-3 col-md-6 mt-2 link">
                 <h3>Project Link</h3>
-                <p>gategaurd.co</p>
-
+                <p><a href="http://gateguard.co">gateguard.co</a></p>
             </div>
             <div class="col-lg-6 col-md-12 brief">
                 <h3>Project Brief</h3>
                 <p>A resident management system built with Laravel and Flutter aiding residents and estates to control
-                    who has access to their spaces. It features visit scheduling, visitor confirmation and a sevvice
+                    who has access to their spaces. It features visit scheduling, visitor confirmation and a service
                     directory.</p>
             </div>
         </div>
@@ -87,7 +89,23 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <img src="img/Frame 1 (3) 2(1).png" class='img-fluid text-center' alt="">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/Frame 1 (3) 3.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/Frame 1 (3) 3.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/Frame 1 (3) 3.png" style="width:100%">
+                    </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
             <div class="col-md-2"></div>
         </div>
@@ -98,14 +116,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                <h3>Ready to start your Project</h3>
-                <a href="#" class='started'>Get Started</a>
-            </div>
+                    <h3>Ready to start your Project</h3>
+                    <a href="#" class='started'>Get Started</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <hr>
+    <div class="container">
+        <hr>
+    </div>
 
 
 
@@ -135,10 +155,10 @@
                 <div class="col-lg-3 col-md-6 mb-3">
                     <h2 id='contact'>Contact Us</h2>
                     <p>
-                       <strong>Phone:</strong>  <br>
+                        <strong>Phone:</strong> <br>
                         +234 (0) 812 345 6789 <br>
-                    </p> 
-                    <p><strong>Email:</strong> 
+                    </p>
+                    <p><strong>Email:</strong>
                         <br>
                         interns@hng.tech
                     </p>
@@ -172,16 +192,36 @@
     <div id="darkish" class="darkish">
         <div class="container">
             <div class="row">
-        <div class="col-md-12 text-center darkish">
-            <p> &copy; 2019, HNG Internship. All rights reserved.</p>
+                <div class="col-md-12 text-center darkish">
+                    <p> &copy; 2019, HNG Internship. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
 
 
+    <script>
+        var slideIndex = 0;
+        showSlides();
 
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" activ", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " activ";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 
     <script src="js/wow.min.js"></script>
     <script>
