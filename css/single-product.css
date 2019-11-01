@@ -200,16 +200,15 @@ margin: 30px 0;
 }
 
 .darkish{
-    padding: 8px;
-    line-height: 8px;
+    padding: 10px 2px 4px 10px;
     background: #8898AA;
 }
 
 .darkish p{
-font-size: 18px;
-line-height: 27px;
-text-align: center;
-color: #FFFFFF;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 a:hover{
