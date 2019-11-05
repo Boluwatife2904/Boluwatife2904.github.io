@@ -131,6 +131,9 @@ li a:hover {
 .contact-arrow{
     margin-top: 40px;
 }
+.contact-arrow .arrow, .education-bottom-arrows .arrow, .interest-bottom-arrows .arrow, .interest-bottom-arrows .arrow, .work-bottom-arrows .arrow, .home-button-arrow .arrow{
+    margin-left: 8.33333%;
+}
 .home-icons{
     display: block;
 }
@@ -234,9 +237,30 @@ li a:hover {
         margin-top: 100px;
     }
     .workicons{
-        margin-top: 45px;
+        margin-top: 3px;
+    }
+    .work-bottom-arrows{
+        margin-top: 50px;
     }
     .educationicons{
+        margin-top: 0px;
+    }
+    .contact-arrow .arrow{
+        margin-left: 40.33333%;
+    }
+    .education-bottom-arrows{
         margin-top: 40px;
+    }
+    .education-bottom-arrows .arrow{
+        margin-left: 40.33333%;
+    }
+    .work-bottom-arrows .arrow{
+        margin-left: 40.33333%;
+    }
+    .home-button-arrow .arrow{
+        margin-left: 40.33333%;
+    }
+    .interest-bottom-arrows .arrow{
+        margin-left: 40.33333%;
     }
 }
