@@ -1,2 +1,2 @@
 # Boluwatife2904.github.io
-StartNg Curriculum Page
+My Github Repository for hosting pages online.
