@@ -247,6 +247,10 @@ section {
   background: rgb(35, 175, 35);
   color: #fff;
 }
+.footer img{
+  height: 100px;
+  margin-bottom: 15px;
+}
 .footer .copyright {
   background: rgb(22, 117, 22);
   margin-top: 20px;
@@ -361,6 +365,9 @@ section {
   .hide-menu-btn {
     display: block;
     color: rgb(25, 231, 25);
+  }
+  .site-navbar {
+    padding: 0 15px;
   }
   .menu {
     position: fixed;
