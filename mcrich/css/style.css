@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Archivo Narrow";
+  font-family: "Montserrat";
   src: local("../fonts/Archivo Narrow Regular"), local("../fonts/ArchivoNarrow"),
-    url("../fonts/ArchivoNarrow-Regular.ttf") format("truetype");
+    url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "Archivo Narrow", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -28,9 +28,56 @@ a {
 section {
   margin-bottom: 70px;
 }
+/* HEADER */
+header{
+  background-image: url("../img/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 70px;
+}
+header .header-content{
+  color:#fff;
+  text-align: center;
+  margin-top: 120px;
+  padding: 0px 10px;
+}
+header .header-content h2{
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+header .header-content a{
+  border:1px solid rgb(25, 231, 25);
+  color:rgb(25, 231, 25);
+  padding: 15px 30px;
+  margin: 30px auto;
+  border-radius: 4px;
+}
+
+/* PARTNERS */
+#partners img {
+  transition: all 500ms ease-in-out;
+  opacity: 0.7;
+  cursor: pointer;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+#partners img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 /* BODY */
 .who-we-are {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .who-we-are .who-we-are-text {
   margin-bottom: 30px;
@@ -44,24 +91,14 @@ section {
 .who-we-are .who-we-are-text > h2 {
   line-height: 50px;
   margin-bottom: 25px;
-  font-size: 38px;
+  font-size: 30px;
 }
 .who-we-are .who-we-are-text > p {
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.2;
 }
 .who-we-are .who-we-are-text p:last-of-type {
-  margin-bottom: 35px;
-}
-.who-we-are .who-we-are-text .read-more {
-  border-radius: 4px;
-  border: 1px solid rgb(25, 231, 25);
-  padding: 10px 30px;
-  color: rgb(25, 231, 25);
-}
-.who-we-are .who-we-are-text .read-more:hover {
-  background-color: rgb(25, 231, 25);
-  color: #fff;
+  margin-bottom: 15px;
 }
 
 /* SERVICES SECTION */
@@ -168,7 +205,7 @@ section {
 
 /* CONTACT US PAGE */
 .contact-form {
-  padding: 50px 0;
+  padding: 10px 0;
 }
 .contact-form .contact-us-form .form-field {
   margin-bottom: 30px;
@@ -247,7 +284,7 @@ section {
   background: rgb(35, 175, 35);
   color: #fff;
 }
-.footer img{
+.footer img {
   height: 100px;
   width: 250px;
   margin-bottom: 15px;
@@ -306,10 +343,28 @@ section {
   color: rgb(18, 175, 10);
 }
 
+/* .about-us h6{
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.about-us ul{
+  list-style: none;
+}
+.about-us ul li{
+  padding-left:20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.about-us ul li::before{
+  content: "-";
+  position: absolute;
+  left: 10px;
+} */
+
 /* NAVBAR */
 .site-navbar {
   height: 100px;
-  padding: 0 40px;
+  /* padding: 0 40px; */
   align-items: center;
 }
 .logo {
@@ -329,14 +384,17 @@ section {
   padding: 10px;
 }
 .menu .navbar-link {
-  color: #222;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 10px;
   transition: all 0.4s;
 }
+.other-pages .navbar-link{
+  color:#222;
+}
 .menu .navbar-link:hover {
-  color: rgb(18, 175, 10);  
+  color: rgb(18, 175, 10);
 }
 .show-menu-btn {
   float: right;
@@ -354,7 +412,7 @@ section {
 .show-menu-btn:hover,
 .hide-menu-btn:hover,
 .menu .navbar-link :hover {
-  color: rgb(21, 116, 21);
+  color: rgb(40, 228, 40);
 }
 #chk {
   position: absolute;
@@ -365,10 +423,10 @@ section {
   .show-menu-btn,
   .hide-menu-btn {
     display: block;
-    color: rgb(25, 231, 25);
+    color: #fff;
   }
   .site-navbar {
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
   .menu {
     position: fixed;
@@ -400,4 +458,16 @@ section {
   #chk:checked ~ .menu {
     right: 0;
   }
+  header .header-content{
+    margin-top: 70px;
+    padding: 0px 10px;
+  }
+  header .header-content h2{
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
 }
+
