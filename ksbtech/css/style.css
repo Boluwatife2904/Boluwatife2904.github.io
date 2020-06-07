@@ -1,0 +1,967 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TruenoLight", sans-serif;
+}
+
+/* NAVBAR STYLES */
+.header {
+  background-color: #0e0b2b;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.navbar-toggler {
+  color: #fff !important;
+  outline: none;
+}
+.navbar .navbar-brand img {
+  height: 50px !important;
+}
+.navbar-nav .nav-item {
+  margin-right: 25px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item .trade-now {
+  color: #ecb400 !important;
+  margin-right: 0 !important;
+}
+
+/* .dropdown:hover > .dropdown-menu {
+  display: block;
+} */
+
+.dropdown-menu {
+  background-color: #0e0b2b;
+  border: none;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+  padding: 10px;
+  transition: all 0.4s ease-in;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #fff;
+  background: transparent;
+}
+
+/* HOME PAGE STYLES */
+.header .hero-text h1 {
+  color: #fff;
+}
+
+.header .products-dropdown {
+  /* width: 100%; */
+  /* display: flex; */
+  left: -100px !important;
+  background: #0e0b2b;
+  z-index: 1000;
+  width: 737px !important;
+}
+
+.header .products-dropdown h6 {
+  color: #fff;
+  font-weight: 500;
+  padding-left: 15px;
+  margin-top: 15px;
+}
+
+.header .products-dropdown .dropdown-item {
+  font-size: 15px;
+}
+
+.header .products-dropdown.show {
+  display: flex;
+  width: auto;
+}
+
+.header .products-dropdown .right-part {
+  width: 50% !important;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.header .products-dropdown .left-part {
+  width: 50% !important;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.header .products-dropdown .left-part {
+  z-index: 1000;
+}
+
+.header .products-dropdown .right-part {
+  z-index: 1000;
+}
+
+.header .hero-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.header .hero-links .login {
+  color: #fff;
+  background-color: #ecb400;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.header .hero-links {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.header .hero-links .register {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.exchange-gift .single-exchange {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.exchange-gift .single-exchange img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.exchange-gift .single-exchange p {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.first-container {
+  margin-bottom: 80px;
+}
+
+.exchange-gift .single-exchange .get-started {
+  background-color: #0e0b2b;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.exchange-gift .transact h1 {
+  margin-top: 50px;
+}
+
+.exchange-gift .transact p {
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.exchange-gift .transact .get-started {
+  background-color: #ecb400;
+  color: #fff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 5px;
+}
+
+.honesty-speed {
+  background-color: #0e0b2b;
+  padding: 30px 10px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.honesty-speed .learn-more {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.honesty-speed img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cardtonic {
+  margin-bottom: 60px;
+}
+
+.cardtonic .cardtonic-images img {
+  margin-bottom: 20px;
+}
+
+.cardtonic-images {
+  background-color: #e4f2fc;
+  padding: 30px;
+}
+
+/* WHY CHOOSE US */
+.why-choose-us{
+  padding: 10px;
+}
+
+.why-choose-us img{
+  margin-bottom: 50px;
+}
+
+.why-choose-us p{
+  line-height: 30px;
+}
+
+.why-choose-ksbtech{
+  background-color: #dfdfdf;
+  color: #0e0b2b;
+  padding: 30px 20px;
+}
+
+.why-choose-ksbtech h1{
+  color: #0e0b2b;
+}
+
+/* RATE CALCULATOR STYLES */
+.rate-calculator {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 30px 10px;
+  background-color: #f5f5f5;
+}
+.trade-info {
+  padding: 20px;
+  border: 1px solid rgb(211, 199, 199);
+  border-radius: 10px;
+}
+
+.rate-calculator .white-bg {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.rate-calculator .form-field {
+  margin-bottom: 15px;
+}
+
+.rate-calculator .hero-text {
+  margin-top: 200px;
+}
+
+.rate-calculator .hero-text h6 {
+  background-color: #0e0b2b;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.rate-calculator .hero-text h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  line-height: 40px;
+  color: #0e0b2b;
+}
+
+.rate-calculator .hero-text h3 {
+  text-transform: capitalize;
+  color: #0e0b2b;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.nav-pills .nav-item a {
+  background-color: rgb(233, 233, 233);
+  padding: 10px 65px;
+  color: #0e0b2b;
+  font-weight: 600;
+}
+
+.nav-pills .nav-item a.active {
+  background-color: transparent;
+  color: #0e0b2b;
+  border-top: 2px solid #0e0b2b;
+  font-weight: 600;
+}
+
+.input-group-text {
+  background-color: transparent;
+}
+
+.rate-calculator .form-field label {
+  color: #0e0b2b;
+  display: block;
+}
+
+.rate-calculator .form-field .form-control:focus {
+  border-color: none !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.rate-calculator .form-field input,
+.rate-calculator .form-field select {
+  padding: 0.5rem 1.5rem;
+}
+
+.trade-info h4 {
+  color: #0e0b2b;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.trade-info h5 {
+  color: #0e0b2b;
+}
+
+.trade-info h2 {
+  color: #0e0b2b;
+  font-weight: bold;
+}
+
+.trade-info hr {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-top: 1px dashed;
+}
+
+/* SUPPORT AND FAQ */
+.how-can-we{
+  background-color: rgb(238, 226, 226);
+  padding: 20px;
+  text-align: center;
+}
+
+.how-can-we .hero-text input{
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+}
+
+/* ABOUT PAGE STYLES */
+.about {
+  padding: 5px;
+}
+.about .hero-text {
+  margin-top: 160px;
+}
+
+.about .hero-text h3 {
+  font-weight: bold;
+}
+
+.metrics img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 12px;
+}
+
+.about-us-container {
+  background-color: #0e0b2b;
+  padding: 40px 10px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.started {
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.single-metric {
+  background-color: #fff;
+  color: #0e0b2b;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.metrics h2{
+  margin-bottom: 40px;
+}
+
+.single-metric i {
+  color: #0e0b2b;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.single-metric h6 {
+  color: #0e0b2b;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.single-metric p {
+  font-size: 15px;
+  color: #0e0b2b;
+}
+
+.arrow-icon {
+  color: #fff;
+  /* margin: 0 auto;
+  padding: 70% 30%;
+  display: block; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* WHO WE ARE STYLES */
+.who-we-are {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.who-we-are .hero-text {
+  margin-top: 200px;
+}
+
+.who-we-are .hero-text h4 {
+  color: #0e0b2b;
+  font-weight: bold;
+}
+
+.who-we-are .hero-text p {
+  line-height: 30px;
+}
+
+.who-we-are .why-you-will h3 {
+  color: #0e0b2b;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.who-we-are .hero-lists {
+  margin-top: 200px;
+}
+
+.who-we-are .hero-lists li {
+  margin-bottom: 20px;
+  color: #0e0b2b;
+  font-weight: bold;
+}
+.close{
+  outline: none !important;
+}
+
+.who-we-are .hero-lists li i {
+  font-size: 20px;
+  color: #00538a;
+  background-color: rgb(165, 213, 245);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#share {
+  background-color: #0e0b2b;
+  color: #fff;
+  padding: 40px 10px;
+  margin-bottom: 60px;
+}
+
+#share h3 {
+  margin-bottom: 20px;
+}
+
+#share a {
+  text-decoration: none;
+  background-color: #fff;
+  color: #0e0b2b;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* CONTACT PAGE STYLES */
+.contact-us {
+  margin-bottom: 50px;
+}
+.contact-left-part {
+  margin-bottom: 40px;
+}
+.contact-submit {
+  outline: none;
+  background: #0e0b2b;
+  color: #fff;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* +++++ SERVICES PAGE STYLES +++++ */
+.services {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 90px;
+}
+
+.services .hero-text h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0e0b2b;
+}
+
+.services .hero-text p {
+  color: #0e0b2b;
+  margin-bottom: 30px;
+}
+
+.services .service i.one {
+  color: rgb(211, 14, 47);
+  background-color: pink;
+}
+
+.services .service i.two {
+  color: rgb(211, 103, 14);
+  background-color: rgb(252, 211, 165);
+}
+
+.services .service i.three {
+  color: rgb(0, 217, 255);
+  background-color: rgb(192, 255, 252);
+}
+
+.services .service i.four {
+  color: rgb(73, 228, 13);
+  background-color: rgb(192, 255, 211);
+}
+
+.services .service i.five {
+  color: rgb(17, 14, 211);
+  background-color: rgb(192, 219, 255);
+}
+
+.services .service i.six {
+  color: rgb(107, 4, 155);
+  background-color: rgb(224, 158, 233);
+}
+
+.services .service {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(250, 247, 247, 0.125);
+  margin-bottom: 50px;
+}
+
+.services .service i {
+  /* display: block;
+  margin: 0 auto; */
+  margin-left: 40%;
+  width: auto;
+  height: auto;
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  align-self: center;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.services .service h5 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services .service p {
+  line-height: 30px;
+}
+
+/* ============= About Section Styles ================= */
+.choose-us-wrapper {
+  padding-top: 50px;
+  margin-bottom: 70px;
+}
+.choose-us-wrapper .hero-text h3 {
+  font-weight: 700;
+  color: #0e0b2b;
+}
+
+.choose-us-wrapper .hero-text p {
+  margin-bottom: 25px;
+  color: #0e0b2b;
+}
+
+.choose-us-title p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.choose-us-item {
+  position: relative;
+  padding-bottom: 4px;
+  padding-left: 80px;
+}
+
+.choose-us-item div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.choose-us-item div i {
+  font-size: 40px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.choose-us-item div i.language {
+  color: #0099ff;
+}
+
+.choose-us-item div i.group {
+  color: orange;
+}
+
+.choose-us-item div i.diamond {
+  color: rgb(253, 46, 81);
+}
+.choose-us-item h3 {
+  color: #0e0b2b;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.choose-us-item p {
+  color: #0e0b2b;
+  font-size: 15px;
+}
+
+/* ++++++ TERM OF USE PAGE STYLING ++++++ */
+.terms-and-conditions {
+  background-color: rgb(166, 166, 245);
+  padding: 50px;
+  font-weight: 700;
+}
+.the-terms .left-part {
+  background-color: rgb(166, 166, 245);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.the-terms .right-part h3 {
+  color: rgb(65, 65, 172);
+}
+
+.the-terms .right-part .single-term h4 {
+  color: rgb(65, 65, 172);
+}
+
+.the-terms h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.the-terms ul li p {
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* ++++++ END OF TERM OF USE PAGE STYLING ++++++ */
+
+/* ANTI MONEY LAUNDERING & PRIVACY POLICY PAGES */
+.antimoneylaundering {
+  margin-bottom: 50px;
+}
+.antimoneylaundering .single-policy {
+  margin-bottom: 40px;
+}
+
+.antimoneylaundering .single-policy ul li {
+  margin-bottom: 8px;
+}
+
+.antimoneylaundering .single-policy h4 {
+  color: #0e0b2b;
+}
+
+.antimoneylaundering .hero-text p {
+  color: #0e0b2b;
+  background-color: #f5f5f5;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.antimoneylaundering .hero-links ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.antimoneylaundering .hero-text h3 {
+  color: #0e0b2b;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.antimoneylaundering h2 {
+  color: #0e0b2b;
+}
+
+.antimoneylaundering .main-policy p {
+  margin-bottom: 50px;
+  line-height: 33px;
+}
+
+.antimoneylaundering .privacy-policy p {
+  line-height: 33px;
+}
+
+.antimoneylaundering .single-privacy-policy .inner-text ul li p {
+  line-height: 24px;
+}
+
+.antimoneylaundering .single-privacy-policy .inner-text h5 {
+  font-weight: 700;
+}
+
+.antimoneylaundering .single-privacy-policy h4 {
+  font-weight: 700;
+}
+
+/* START WORKING CONTAINER */
+.start-working {
+  padding: 20px;
+  color: #fff;
+}
+
+.start-working .main-container {
+  padding: 50px 30px;
+  background-color: #0e0b2b;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+.start-working .main-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.start-working .main-container p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.start-working .main-container .subscribe {
+  background: #ecb400;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.start-working .main-container input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  margin-bottom: 5px;
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #0e0b2b;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer h4 {
+  color: #ecb400;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.footer img {
+  height: 80px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 396px) {
+  .header .hero-links .login {
+    display: block;
+  }
+
+  .header .hero-links .register {
+    display: block;
+  }
+
+  .start-working .main-container input {
+    width: 100%;
+  }
+
+  .who-we-are .hero-text {
+    margin-top: 20px;
+  }
+
+  .welcome {
+    background-color: #fff !important;
+  }
+
+  .header .products-dropdown {
+    width: auto !important;
+  }
+
+  .arrow-icon i{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header .products-dropdown {
+    width: auto !important;
+  }
+
+  .header .hero-links .login {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .header .hero-links .register {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .arrow-icon i{
+    display: none;
+  }
+
+  .arrow-icon{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .start-working .main-container input {
+    width: 100%;
+  }
+
+  .who-we-are .hero-text {
+    margin-top: 20px;
+  }
+
+  .who-we-are .hero-lists {
+    margin-top: 20px;
+  }
+
+  .rate-calculator .hero-text {
+    margin-top: 10px;
+  }
+
+  .welcome {
+    background: #fff;
+  }
+
+  .about .hero-text {
+    margin-top: 0;
+  }
+
+  .header .products-dropdown.show {
+    display: block;
+  }
+
+  .header .products-dropdown .right-part {
+    width: 100% !important;
+    display: inline-block;
+  }
+
+  .header .products-dropdown .left-part {
+    width: 100% !important;
+    display: inline-block;
+  }
+
+  .arrow-icon{
+    display: none;
+  }
+}
+
+/* HOW TO PAGE STYLES */
+.ponpon {
+  text-align: center;
+  padding: 10px;
+}
+.ponpon > div h3 {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+.ponpon > div p {
+  color: gray;
+}
+.ponpon > strong {
+  color: black;
+}
+.ponpon > img {
+  padding: 10px 0px 50px 0px;
+}
