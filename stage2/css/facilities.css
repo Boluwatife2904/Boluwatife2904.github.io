@@ -108,9 +108,9 @@ a {
   text-align: center;
   margin-bottom: 50px;
   background-image: url("../img/swimming.png");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .breadcrumb__area .navbar__menu {
   background-color: rgba(255, 255, 255, 0.9);
