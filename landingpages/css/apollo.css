@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "Archivo Narrow";
+  src: local("../fonts/Archivo Narrow Regular"), local("../fonts/ArchivoNarrow"),
+    url("../fonts/ArchivoNarrow-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Archivo Narrow", sans-serif;
+}
+a {
+  outline: none;
+  transition: all 0.3s;
+  text-decoration: none !important;
+}
+section {
+  margin-bottom: 100px;
+}
+
+/* NAVBAR */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+.navbar-nav .nav-item {
+  margin: 0 20px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #fff !important;
+  font-size: 18px;
+}
+
+/* MAIN SECTION */
+#main {
+  background: url("../image/background.png");
+  background-size: cover;
+  height: 100vh;
+}
+.header-main {
+  margin-top: 50px;
+}
+.header-text {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+.download-links {
+  margin-top: 50px;
+}
+.download-links .apple-store,
+.download-links .play-store {
+  padding: 13px 20px;
+  color: #fff;
+  margin-right: 10px;
+  transition: all 0.5s;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(23, 54, 76, 0.4);
+}
+.download-links i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.download-links .apple-store {
+  background-color: #333;
+}
+.download-links .apple-store:hover {
+  color: #222;
+  background-color: #fff;
+  /* border: 1px solid #fff; */
+}
+.download-links .play-store {
+  border: 1px solid #fff;
+}
+.download-links .play-store:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/* OVERVIEW SECTION */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font: 2.5rem;
+  position: relative;
+}
+.section-title:after,
+.section-title:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #5a34fc;
+  bottom: -5px;
+  border-radius: 5px;
+}
+.section-title:before {
+  width: 60px;
+  height: 2px;
+  bottom: -10px;
+}
+#testimonials .section-title:after,
+#testimonials .section-title:before {
+  background-color: #fff;
+}
+
+#overview .single-overview {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+#overview .single-overview .overview-icon {
+  font-size: 3rem;
+  color: #5a34fc;
+  margin-bottom: 15px;
+}
+#overview .single-overview .single-overview-title {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+#overview .single-overview .single-overview-content {
+  font-size: 18px;
+}
+
+/* TESTIMONIALS SECTION */
+#testimonials {
+  background-color: #5a34fc;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+.carousel-item {
+  padding: 2% 15%;
+  text-align: center;
+  color: #fff;
+}
+
+/* PRICING SECTION*/
+#pricing {
+  padding: 30px 0;
+}
+#pricing .card {
+  border: 1px solid #5a34fc;
+  box-shadow: 0 1px 2px rgb(59, 43, 91, 0.3);
+  margin-bottom: 20px;
+  text-align: center;
+}
+#pricing .card .card-body {
+  padding: 10% 15%;
+}
+#pricing .card .card-body h2 {
+  color: grey;
+}
+#pricing .card .card-body h1 {
+  color: #5a34fc;
+  font-weight: bold;
+  padding: 3% 0;
+}
+#pricing .card .card-body .signup-btn {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#pricing .card .card-body .signup-btn:hover {
+  background-color: #5a34fc;
+}
+
+/* CALL TO ACTION */
+#cta {
+  justify-content: center;
+  background-color: #5a34fc;
+  padding: 7% 15%;
+  color: #fff;
+  text-align: center;
+}
+#cta .cta-text {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+/* TEST MEDIA */
+.media i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin-right: 15px;
+}
+.media i,
+.media h5 {
+  color: #5a34fc;
+}
+
+/* FOOTER SECTION */
+#footer {
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+#footer .follow-icons {
+  display: flex;
+  justify-content: center;
+}
+#footer .footer-icon {
+  font-size: 1.5rem;
+  padding: 10px 35px;
+  color: #5a34fc;
+  text-align: center;
+}
+
+@media screen and (max-width: 392px) {
+  .header-main {
+    margin-top: 100px;
+  }
+  .header-main .header-text {
+    font-size: 1.85rem;
+  }
+  .header-main .download-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #cta .cta-text {
+    font-size: 1.7rem;
+  }
+  #cta .download-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iphone-mock {
+    display: none;
+  }
+  .header-main {
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-main {
+    margin-top: 20px;
+  }
+  .header-main h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-main {
+    margin-top: 60px;
+  }
+  .header-main h1 {
+    font-size: 2.5rem;
+  }
+}
