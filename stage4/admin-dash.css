@@ -329,6 +329,7 @@
     max-width: 1440px;
     margin-left: 0;
     padding: 32px 78px 29px 68px;
+    background-color: #FFFFFF;
   }
 }
 @media screen and (max-width: 610px){
@@ -348,6 +349,7 @@
     max-width: 1440px;
     margin-left: 0;
     padding: 32px 48px 29px 38px;
+    background-color: #FFFFFF;
   }
 
   /*********** MOBILE VIEW FOR HEADER WAS EDITTED HERE ***********/
@@ -379,6 +381,7 @@
     max-width: 1440px;
     margin-left: 0;
     padding: 32px 48px 29px 38px;
+    background-color: #FFFFFF;
   }
   .recent_activity {
     margin-top: 26px;
@@ -392,6 +395,7 @@
     max-width: 1440px;
     margin-left: 0;
     padding: 32px 28px 29px 18px;
+    background-color: #FFFFFF;
   }
   .recent_activity {
     margin-top: 26px;
@@ -428,6 +432,7 @@
     max-width: 1440px;
     margin-left: 0;
     padding: 32px 0 29px 0;
+    background-color: #FFFFFF;
   }
   .recent_activity {
     margin-top: 26px;
@@ -455,6 +460,9 @@
 /*********** MOBILE VIEW FOR HEADER WAS EDITTED HERE ***********/
 
 @media screen and (max-width: 380px){
+  .admin__dashboard{
+    background-color: #FFFFFF;
+  }
   .top__nav__contents {
     padding: 1.5rem 1px;
   }
@@ -479,6 +487,9 @@
 /*********** MOBILE VIEW FOR HEADER END ***********/
 
 @media screen and (max-width: 335px){
+  .admin__dashboard{
+    background-color: #FFFFFF;
+  }
   .admin__dashboard .last__section .statistics__date {
     min-width: 118px;
     font-size: 12px;
@@ -514,6 +525,9 @@
   }
 }
 @media screen and (max-width: 305px){
+  .admin__dashboard{
+    background-color: #FFFFFF;
+  }
   .admin__dashboard .last__section .statistics__date {
     min-width: 108px;
     font-size: 12px;
