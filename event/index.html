@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Main Section -->
+    <section class="header__section">
+        <div class="container navbar__cont">
+            <!-- Navbar Here -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+                <!-- Brand -->
+                <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="Logo"></a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa fa-bars"></i></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Add Event</a>
+                        </li>
+                        <li class="nav-item join-now">
+                            <a class="nav-link" href="#">Join Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="hero__text">Your go-to site for <br> UX & UI design <br> events online.</h1>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/hero-image.png" class="img-fluid hero__image" width="300" alt="">
+                    <div class="below__image__box"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="header__box__center"></div>
+        <div class="header__box__bottom"></div>
+    </section>
+
+    <section class="featured__events">
+        <!-- FIND EVENTS SECTION -->
+        <div class="container find__events__section mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header__text">
+                        <h3>Find Events</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row find__events mb-5">
+                <div class="col-md-12">
+                    <ul class="nav mb-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Date</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Price <i class="fa fa-chevron-down pl-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Format <i class="fa fa-chevron-down pl-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Language <i class="fa fa-chevron-down pl-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropbtn" href="javascript:void" onclick="myFunction()">
+                                Category <i class="fa fa-chevron-down arrow-icon pl-2" onclick="myFunction()"></i></a>
+                            <div class="dropdown">
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">UX Design</a>
+                                    <a href="#">UX Research</a>
+                                    <a href="#">Design Systems</a>
+                                    <a href="#">Illustrations</a>
+                                    <a href="#">Animations</a>
+                                    <a href="#">Front-End Dev</a>
+                                    <a href="#">Graphic Design</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="featured__events__cont">
+                        <div class="arrow__icons">
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 featured__text">
+                                <h6>Featured Events</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur r adipiscing elit, sed do eiusmod tempor in
+                                    adipiscing</p>
+                            </div>
+                            <div class="col-md-12">
+                                <!-- Slideshow container -->
+                                <div class="slideshow-container">
+                                    <!-- Event details and caption text -->
+                                    <div class="mySlides slide-in">
+                                        <div class="row">
+                                            <div class="event__slideshow__details">
+                                                <h6>Setting User Goals</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt,
+                                                    voluptate!</p>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                                    magni!</p>
+                                                <a href="#">View more</a>
+                                            </div>
+                                            <img src="images/image-one.png" class="img-fluid" alt="Event Image">
+                                        </div>
+                                    </div>
+
+                                    <div class="mySlides slide-in">
+                                        <div class="row">
+                                            <div class="event__slideshow__details">
+                                                <h6>Setting User Goals</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt,
+                                                    voluptate!</p>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                                    magni!</p>
+                                                <a href="#">View more</a>
+                                            </div>
+                                            <img src="images/image-two.png" class="img-fluid" alt="Event Image">
+                                        </div>
+                                    </div>
+
+                                    <div class="mySlides slide-in">
+                                        <div class="row">
+                                            <div class="event__slideshow__details">
+                                                <h6>Setting User Goals</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt,
+                                                    voluptate!</p>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                                    magni!</p>
+                                                <a href="#">View more</a>
+                                            </div>
+                                            <img src="images/image-three.png" class="img-fluid" alt="Event Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALL EVENTS CONTAINER -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-one.png" alt="" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-two.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-three.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-one.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-two.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-three.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="view__more__button">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- POPULAR IN UX RESEARCH SECTION -->
+        <div class="container popular__section">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="header__text">
+                        <h3>Popular in <span>UX Research</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-one.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-two.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event__card">
+                        <div class="event__card__image">
+                            <img class="img-fluid" src="images/image-three.png" alt="Event Image">
+                            <a href="#" class="like__button"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="event__card__details">
+                            <h6>Setting User Goals</h6>
+                            <p>ores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                            <div class="event__card__ctas">
+                                <a href="#">ores eos</a>
+                                <a href="#">adipci ng tempor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="view__more__button">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <h4>Abli su</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <h4>Abli su</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <h4>Abli su</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <h4>Subscribe</h4>
+                    <form action="">
+                        <div class="subscribe__form">
+                            <input type="email" name="" id="" value="you@email.com">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__box"></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
