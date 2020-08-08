@@ -463,7 +463,7 @@ body {
     display: none;
   }
   .arrow__icons {
-    top: 128px;
+    top: 127px;
   }
 }
 @media screen and (max-width: 768px) {
