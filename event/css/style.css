@@ -455,6 +455,17 @@ body {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 764px) {
+  .event__slideshow__details a {
+    width: 180.19px;
+  }
+  .header__box__center {
+    display: none;
+  }
+  .arrow__icons {
+    top: 128px;
+  }
+}
 @media screen and (max-width: 768px) {
   .event__slideshow__details {
     position: static;
