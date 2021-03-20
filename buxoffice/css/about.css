@@ -15,24 +15,6 @@ body {
   background-size: 150px;
 }
 
-#header nav{
-  margin-bottom: 30px;
-}
-
-#header a.navbar-brand {
-  background: transparent;
-}
-
-#header a.apply {
-  background: #7a37d5;
-  border-radius: 5px;
-  padding: 10px 50px;
-  color: beige;
-  line-height: 20px;
-  text-align: center;
-  font-size: 24px;
-}
-
 #header h3 {
   text-transform: capitalize;
   font-size: 30px;
@@ -48,84 +30,10 @@ body {
   font-size: 22px;
 }
 
-#header img.halfcircle {
-  height: 350px;
-  float: right;
-  margin-top: 80px;
-}
-
-#header a.navbar-brand img.nav{
-  height: 55px;
-}
-
-/* #header li a {
-  font-family: "Poppins";
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: 500;
-} */
-
-#header li a {
-  font-weight: 500;
-  transition: all 500ms ease-in-out;
-  outline: none;
-}
-
-#header li a:hover {
-  transform: scale(1.05);
-}
-
-#header li a.signup {
-  background: #7a37d5;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: inline-block;
-}
-
-#header li a.active{
-  position: relative;
-}
-
-#header li a.active:after{
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom:0;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 2px;
-  background-color: rgba(122, 55, 213, 0.2);
-  color: red;
-}
-#header img.nav {
-  height: 60px;
-}
-
 span.colored {
   color: #7a37d5;
 }
 
-#testimonials {
-  padding: 0 40px;
-  margin: 100px 0;
-}
-
-#testimonials p.height {
-  line-height: 50px;
-}
-
-#testimonials #first,
-#testimonials #second {
-  margin-top: 100px;
-}
-
-#testimonials p.purple {
-  color: #7a37d5;
-  font-size: 18px;
-  text-transform: capitalize;
-}
 #header a.contact {
   padding: 0.9rem 1.8rem;
   background: #7a37d5;
@@ -148,13 +56,11 @@ span.colored {
 
 .about img {
   height: 400px;
-  float: left;
-  /* display: block;
-  margin: 0 auto; */
+  display: block;
+  margin: 0 auto;
 }
 
 .about h3 {
-  margin-top: 150px;
   margin-bottom: 30px;
   font-weight: bold;
   font-family: 'Arvo', sans-serif;
@@ -165,41 +71,44 @@ span.colored {
   line-height: 40px;
 }
 
-#team{
+#team {
   margin: 40px 0;
 }
 
-#team h3{
+#team h3 {
   font-family: "Arvo", sans-serif;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
-#inquiries, #join{
+#inquiries,
+#join {
   margin-bottom: 30px;
   padding: 20px 0 0 10px;
 }
 
-#newsletter{
+#newsletter {
   margin-bottom: 100px;
   padding: 20px 0 0 10px;
 }
 
-#newsletter input{
+#newsletter input {
   display: block;
   border: none;
-  font-size: 48px;
-  padding-left: 15px;
+  font-size: 28px;
+  padding: 15px;
   color: #5622a8;
-  margin: 30px 0;
+  margin: 10px 0;
+  width: 100%;
 }
 
-#newsletter input:invalid{
+#newsletter input:invalid {
   box-shadow: none;
   border: none;
   outline: none;
 }
 
-#newsletter .subscribe{
+#newsletter .subscribe {
   background: #fff;
   border: 1px solid #7a37d5;
   outline: none;
@@ -209,94 +118,39 @@ span.colored {
   box-shadow: 4px 4px 4px rgba(122, 55, 213, 0.2);
   margin: 10px;
   transition: 400ms ease-in;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
 }
 
-#newsletter .subscribe:hover{
+#newsletter .subscribe:hover {
   background: #7a37d5;
   color: #fff;
 }
 
 #inquiries h3,
-#join h3{
+#newsletter h3,
+#join h3 {
   color: #7a37d5;
-  margin-bottom: 30px;
-}
-
-#inquiries p, #join p{
-  font-size: 20px;
-}
-
-#inquiries h4, #join h4{
-  font-weight: bold;
+  margin-bottom: 20px;
   font-size: 24px;
 }
 
-#join img{
-  height: 350px;
-  float: right;
-  margin-top: -50px;
-  /* display: block;
-  margin: 0 auto; */
+#inquiries p,
+#join p {
+  font-size: 16px;
 }
 
-/* .seen {
-  margin-bottom: 100px;
-}
-
-.seen h3 {
-  margin-bottom: 40px;
-}
-.seen .logos {
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-.seen .circle {
-  height: 400px;
-  float: right;
-  margin-top: -60px;
-} */
-
-#footer {
-  background-color: #5622a8;
-  color: #fff;
-  padding: 40px;
-  font-family: "Poppins";
-}
-
-#footer .icons {
-  display: inline-flex;
-  justify-content: space-between;
-}
-#footer i {
-  background-color: #fff;
-  color: #5622a8;
-  height: auto;
-  width: auto;
-  padding: 8px 10px;
-  font-size: 20px;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-
-#footer li {
-  list-style: none;
-  margin-bottom: 5px;
-}
-#footer li a {
-  color: #fff;
+#inquiries h4,
+#join h4 {
+  font-weight: 600;
   font-size: 18px;
-  text-decoration: none;
+  line-height: 26px;
 }
 
-#footer a,
-#footer p {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
+#join img {
+  height: 250px;
+  float: right;
+  margin-top: -10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -306,48 +160,25 @@ span.colored {
     float: none;
     margin: 0 auto;
   }
+
   .about h3 {
     margin-top: 50px;
     margin-bottom: 15px;
   }
-  #header img.halfcircle {
-    transform: rotate(90deg);
-    display: none;
-  }
 
-  .seen .circle {
-    display: block;
-    margin: 0 auto;
-    float: none;
-  }
-
-  #testimonials p.height {
-    line-height: 30px;
-  }
-
-  #testimonials p.purple {
-    font-size: 12px;
-  }
-
-  #testimonials #first,
-  #testimonials #second {
-    margin-top: 20px;
-  }
-
-  #newsletter input{
+  #newsletter input {
     font-size: 28px;
     color: #9f65f0;
-}
-
-  #join img{
-    display: none;
   }
 
+  #join img {
+    display: none;
+  }
 }
 
 
-@media screen and (max-width:990px){
-  #header li a.active:after{
-      content:none;
-}
+@media screen and (max-width:990px) {
+  #header li a.active:after {
+    content: none;
+  }
 }

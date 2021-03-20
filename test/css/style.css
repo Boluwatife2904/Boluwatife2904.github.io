@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+  transition: all 0.5s;
+}
+
+/* NAVBAR SECTION */
+header {
+  background: #ffffff;
+  padding: 5px 0;
+}
+
+header .site-logo {
+  height: 50px;
+}
+
+.header .navbar {
+  padding: 0 !important;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  color: #1f1534;
+  display: block;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none !important; 
+  background: none;
+}
+
+.navbar-toggler .line {
+  height: 4px;
+  background-color: #1f1534;
+  margin-bottom: 4px;
+  border-radius: 100px;
+}
+
+.navbar-toggler .line-1,
+.navbar-toggler .line-3{
+  width: 22px;
+}
+
+.navbar-toggler .line-2 {
+  width: 32px;
+}
+
+#home {
+  padding-top: 100px;
+}
+
+.text-content h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: rgb(48, 48, 48);
+}
+
+.text-content p {
+  line-height: 30px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.text-content h2 span {
+  color: #ac0404;
+}
+
+.text-content a {
+  padding: 16px 30px;
+  border-radius: 6px;
+  outline: none;
+  color: #ffffff;
+  background: #ac0404;
+  text-decoration: none;
+}
+
+.image-1 {
+  height: 300px;
+  border-radius: 10px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.image-2 {
+  height: 250px;
+  border-radius: 10px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.image-3 {
+  height: 280px;
+  border-radius: 10px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.image-4 {
+  height: 240px;
+  border-radius: 10px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+/* FEATURES */
+.features {
+  margin: 50px 0 80px;
+  padding: 60px 0;
+  background: #f9f9ff;
+}
+
+.single__feature {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.single__feature h5 span {
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.single__feature h5 {
+  font-size: 18px;
+}
+
+.single__feature p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* PRODUCTS */
+.our__products {
+  margin-bottom: 100px;
+}
+
+.single__product {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.single__product img {
+  width: 100%;
+  height: 300px;
+}
+
+.single__product .text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 100%;
+}
+
+.single__product .text h6 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.view__more__button a {
+  color: #ac0404;
+  border: 1px solid #ac0404;
+  padding: 12px 30px;
+  border-radius: 4px;
+  background-color: #ac0404;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer__section {
+  margin-top: 100px;
+  padding: 0;
+  background: #1c2332;
+}
+
+.footer__section .copyright {
+  background: #161c27;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer__section .copyright p {
+  line-height: normal;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.footer__section img {
+  height: 80px;
+}
+
+.footer__section p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.footer__section .footer__navigation {
+  list-style: none;
+}
+
+.footer__section .footer__navigation li {
+  margin-bottom: 16px;
+  transition: all 0.5s;
+}
+
+.footer__section .footer__navigation li a {
+  color: #ffffff;
+}
+
+.footer__section h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer__section h4::after {
+  content: "";
+  height: 2px;
+  width: 80px;
+  background-color: #890303;
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.footer__section .contact__us li {
+  display: inline-block;
+}
+
+.footer__section .contact__us p {
+  color: #ffffff;
+}
+
+.footer__section .contact__us p span {
+  padding-right: 6px;
+}
+
+.footer__section .social-media {
+  display: flex;
+}
+
+.footer__section .social-media li {
+  margin-right: 15px;
+}
+
+.footer__section .social-media li a {
+  color: #ffffff;
+  font-size: 24px;
+}

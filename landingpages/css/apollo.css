@@ -5,12 +5,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,11 +20,13 @@ html {
 body {
   font-family: "Archivo Narrow", sans-serif;
 }
+
 a {
   outline: none;
   transition: all 0.3s;
   text-decoration: none !important;
 }
+
 section {
   margin-bottom: 100px;
 }
@@ -33,9 +37,35 @@ section {
   font-weight: bold;
   color: #fff !important;
 }
+
+#main .navbar .navbar-toggler{
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  outline: none !important;
+}
+
+#main .navbar .navbar-toggler .line{
+  display: block;
+  margin-bottom: 5px;
+  height: 3px;
+  width: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#main .navbar .navbar-toggler .line-2{
+  width: 30px;
+}
+
+#main .navbar .navbar-toggler .line-3{
+  width: 20px;
+}
+
 .navbar-nav .nav-item {
   margin: 0 20px;
 }
+
 .navbar-nav .nav-item .nav-link {
   color: #fff !important;
   font-size: 18px;
@@ -47,17 +77,21 @@ section {
   background-size: cover;
   height: 100vh;
 }
+
 .header-main {
   margin-top: 50px;
 }
+
 .header-text {
   font-size: 3.5rem;
   font-weight: 900;
   color: #fff;
 }
+
 .download-links {
   margin-top: 50px;
 }
+
 .download-links .apple-store,
 .download-links .play-store {
   padding: 13px 20px;
@@ -67,21 +101,26 @@ section {
   border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgba(23, 54, 76, 0.4);
 }
+
 .download-links i {
   margin-right: 10px;
   font-size: 16px;
 }
+
 .download-links .apple-store {
   background-color: #333;
 }
+
 .download-links .apple-store:hover {
   color: #222;
   background-color: #fff;
   /* border: 1px solid #fff; */
 }
+
 .download-links .play-store {
   border: 1px solid #fff;
 }
+
 .download-links .play-store:hover {
   background-color: #fff;
   color: #222;
@@ -94,6 +133,7 @@ section {
   font: 2.5rem;
   position: relative;
 }
+
 .section-title:after,
 .section-title:before {
   position: absolute;
@@ -107,11 +147,13 @@ section {
   bottom: -5px;
   border-radius: 5px;
 }
+
 .section-title:before {
   width: 60px;
   height: 2px;
   bottom: -10px;
 }
+
 #testimonials .section-title:after,
 #testimonials .section-title:before {
   background-color: #fff;
@@ -121,15 +163,18 @@ section {
   padding: 0 20px;
   margin-bottom: 50px;
 }
+
 #overview .single-overview .overview-icon {
   font-size: 3rem;
   color: #5a34fc;
   margin-bottom: 15px;
 }
+
 #overview .single-overview .single-overview-title {
   font-weight: bolder;
   margin-bottom: 10px;
 }
+
 #overview .single-overview .single-overview-content {
   font-size: 18px;
 }
@@ -140,6 +185,7 @@ section {
   margin-top: 60px;
   padding: 40px 0;
 }
+
 .carousel-item {
   padding: 2% 15%;
   text-align: center;
@@ -150,23 +196,28 @@ section {
 #pricing {
   padding: 30px 0;
 }
+
 #pricing .card {
   border: 1px solid #5a34fc;
   box-shadow: 0 1px 2px rgb(59, 43, 91, 0.3);
   margin-bottom: 20px;
   text-align: center;
 }
+
 #pricing .card .card-body {
   padding: 10% 15%;
 }
+
 #pricing .card .card-body h2 {
   color: grey;
 }
+
 #pricing .card .card-body h1 {
   color: #5a34fc;
   font-weight: bold;
   padding: 3% 0;
 }
+
 #pricing .card .card-body .signup-btn {
   display: block;
   background-color: #222;
@@ -174,6 +225,7 @@ section {
   padding: 10px 20px;
   border-radius: 5px;
 }
+
 #pricing .card .card-body .signup-btn:hover {
   background-color: #5a34fc;
 }
@@ -186,6 +238,7 @@ section {
   color: #fff;
   text-align: center;
 }
+
 #cta .cta-text {
   font-size: 2.7rem;
   font-weight: bold;
@@ -198,6 +251,7 @@ section {
   text-align: center;
   margin-right: 15px;
 }
+
 .media i,
 .media h5 {
   color: #5a34fc;
@@ -208,10 +262,12 @@ section {
   padding: 20px 0;
   margin-bottom: 0;
 }
+
 #footer .follow-icons {
   display: flex;
   justify-content: center;
 }
+
 #footer .footer-icon {
   font-size: 1.5rem;
   padding: 10px 35px;
@@ -223,16 +279,20 @@ section {
   .header-main {
     margin-top: 100px;
   }
+
   .header-main .header-text {
     font-size: 1.85rem;
   }
+
   .header-main .download-links a {
     display: block;
     margin-bottom: 10px;
   }
+
   #cta .cta-text {
     font-size: 1.7rem;
   }
+
   #cta .download-links a {
     display: block;
     margin-bottom: 10px;
@@ -243,6 +303,7 @@ section {
   .iphone-mock {
     display: none;
   }
+
   .header-main {
     padding: 0 30px;
     text-align: center;
@@ -254,6 +315,7 @@ section {
   .header-main {
     margin-top: 20px;
   }
+
   .header-main h1 {
     font-size: 1.8rem;
   }
@@ -263,6 +325,7 @@ section {
   .header-main {
     margin-top: 60px;
   }
+
   .header-main h1 {
     font-size: 2.5rem;
   }

@@ -9,25 +9,13 @@ body {
 }
 
 /* HEADER STYLING */
-#header {
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-#header nav{
-  margin-bottom: 30px;
-}
-
 #works,
-#ready{
-    padding: 30px;
+#ready {
+  padding: 30px;
 }
 
-#ready{
+#ready {
   background: rgb(236, 236, 236);
-}
-#header a.navbar-brand {
-  background: transparent;
 }
 
 #header img.nav {
@@ -46,74 +34,40 @@ body {
 #header p {
   margin-bottom: 50px;
   font-size: 26px;
-  letter-spacing: .35rem;
-  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.35rem;
+  font-family: "Poppins", sans-serif;
 }
 
-#header li a {
-  font-weight: 500;
-  transition: all 500ms ease-in-out;
-  outline: none;
-}
-
-#header li a:hover{
-  transform: scale(1.05);
-}
-
-#header li a.active{
-  position: relative;
-}
-
-#header li a.active:after{
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom:0;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 2px;
-  background-color: rgba(122, 55, 213, 0.2);
-  color: red;
-}
-
-#header li a.signup {
-  background: #7a37d5;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: inline-block;
-}
-
-#header li a.login {
-  color: #2b88f7;
-  margin-right: 25px;
-  font-size: 18px;
-}
-
-#header img.nav {
-  height: 60px;
-}
 
 #header img.man {
-  /* margin-top: 70px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* BODY STYLING */
+#works img{
+  height: 500px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 #works h3 {
-  margin-top: 200px;
   margin-bottom: 20px;
-  font-size: 44px;
+  font-size: 30px;
   font-family: "Arvo", sans-serif;
   font-weight: bold;
 }
 
 #works p {
-  font-size: 24px;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+#works h5 {
+  font-size: 20px;
   line-height: 40px;
   margin-bottom: 50px;
 }
@@ -133,31 +87,32 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-
-#works .horizontal{
-  background: url('../img/dots.png');
+#works .horizontal {
+  background: url("../img/dots.png");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 18%;
 }
 
-#works .nobio{
-  background: url('../img/dotsbg.png');
+#works .nobio {
+  background: url("../img/dotsbg.png");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 40%;
 }
+
 #ready h3 {
-    margin-top: 50px;
   color: #7a37d5;
   font-weight: bold;
   font-family: "Arvo", sans-serif;
-  font-size: 48px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
+
 #ready p {
-  font-size: 28px;
+  font-size: 20px;
   letter-spacing: 0.4rem;
+  line-height: 40px;
 }
 
 #ready span a {
@@ -165,46 +120,13 @@ body {
   text-decoration: underline;
 }
 
-/* FOOTER STYLING */
-#footer a,
-#footer p {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-}
-
-#footer {
-  background-color: #5622a8;
-  color: #fff;
-  padding: 40px;
-}
-
-#footer .icons {
-  display: inline-flex;
-  justify-content: space-between;
-}
-#footer i {
-  background-color: #fff;
-  color: #5622a8;
-  height: auto;
-  width: auto;
-  padding: 8px 10px;
-  font-size: 20px;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-
-#footer li {
-  list-style: none;
-  margin-bottom: 5px;
-}
-#footer li a {
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
-}
-
 /* MEDIA QUERIES */
+@media screen and (max-width: 560px) {
+  #works img{
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #header h3 {
     margin-top: 20px;
@@ -215,21 +137,37 @@ body {
     letter-spacing: 0.12rem;
     margin-bottom: 40px;
   }
+
   #header img.man {
     margin: 20px 0;
     height: 80%;
   }
+
   #works h3 {
     margin-top: 20px;
   }
-  #works p{
-      font-size:20px;
+
+  #works p {
+    font-size: 20px;
   }
+
   #works a#more {
     font-size: 16px;
   }
+
   #ready h3 {
     font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  #header li a.active:after {
+    content: none;
+  }
+
+  #works img{
+    height: 350px;
   }
 }
 
@@ -238,28 +176,26 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   #header p {
     letter-spacing: 0.1rem;
     margin-bottom: 40px;
   }
+
   #works h3 {
     margin-top: 50px;
   }
-  #works p{
-    font-size:20px;
-}
+
+  #works p {
+    font-size: 20px;
+  }
+
   #ready h3 {
     margin-top: 50px;
     font-size: 30px;
-}
-#ready p{
+  }
+
+  #ready p {
     font-size: 20px;
-}
-}
-
-
-@media screen and (max-width:990px){
-  #header li a.active:after{
-      content:none;
-}
+  }
 }

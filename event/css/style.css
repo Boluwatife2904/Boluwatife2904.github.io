@@ -137,6 +137,7 @@ body {
   display: inline-block;
   font-weight: 700;
   margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .header__text span {
@@ -326,7 +327,7 @@ body {
 }
 
 .event__slideshow__details a {
-  background: rgba(250, 34, 78, 0.7);
+  background: #fa224e;
   border-radius: 6px;
   color: #fff;
   text-decoration: none;
@@ -335,7 +336,11 @@ body {
   height: 44px;
   display: block;
   text-align: center;
-  padding: 8px;
+  padding: 10px 8px;
+}
+
+.event__slideshow__details a:hover {
+  background: rgba(250, 34, 78, 0.7);
 }
 
 /* EVENTS Slideshow container */
@@ -436,10 +441,10 @@ body {
 }
 
 .footer__section .subscribe__form input {
-  border: 1px solid #ffffff;
+  border: 2px solid #fa224e;
   border-radius: 10px;
   background: transparent;
-  padding: 10px 15px;
+  padding: 10px 20px;
   color: #fff;
   font-weight: bold;
 }
@@ -455,6 +460,18 @@ body {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 400px) {
+  .header__section .hero__text {
+    font-size: 30px;
+  }
+  .header__section .navbar__cont {
+    margin-bottom: 10px;
+  }
+  .header__section .hero__text {
+    padding-top: 5px;
+  }
+}
+
 @media screen and (max-width: 764px) {
   .event__slideshow__details a {
     width: 180.19px;
@@ -474,6 +491,9 @@ body {
   .mySlides img {
     width: 100%;
     height: 250px;
+  }
+  .header__section .navbar__cont {
+    margin-bottom: 15px;
   }
 }
 
