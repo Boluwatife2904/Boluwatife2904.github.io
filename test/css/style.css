@@ -34,6 +34,10 @@ header .site-logo {
   padding: 0 !important;
 }
 
+.navbar{
+  padding: 0 !important;
+}
+
 nav .navbar-nav .nav-item .nav-link {
   color: #1f1534;
   display: block;
@@ -67,7 +71,7 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 #home {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .text-content h2 {
@@ -190,6 +194,80 @@ nav .navbar-nav .nav-item .nav-link {
   background-color: #ac0404;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* CLIENTS */
+.our__partners h4 {
+  font-size: 25px;
+}
+
+/* FEEDBACKS */
+.our__feedbacks{
+  background: #fdfdfd;
+  padding: 50px 0;
+  margin-bottom: 100px;
+}
+
+.client-feedback {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  padding: 40px 30px 20px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 4px;
+  margin: 30px 0;
+}
+
+.client-feedback .comment-icon {
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+.client-feedback .comment-icon .inner {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ac0404;
+  border-radius: 50%;
+}
+
+.client-feedback .comment-icon  i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.client-feedback .author {
+  text-align: center;
+}
+
+.client-feedback .author h6 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.client-feedback .author p {
+  color: #ac0404;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.client-feedback .comment p {
+  color: rgb(129, 129, 129);
+  line-height: 28px;
+  font-weight: normal;
 }
 
 /* FOOTER */
