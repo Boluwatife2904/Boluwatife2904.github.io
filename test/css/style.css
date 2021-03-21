@@ -22,7 +22,7 @@ a {
 
 /* NAVBAR SECTION */
 header {
-  background: #ac0404;
+  background: #ffffff;
   padding: 10px 0;
 }
 
@@ -39,7 +39,7 @@ header .site-logo {
 }
 
 nav .navbar-nav .nav-item .nav-link {
-  color: #ffffff;
+  color: #ac0404;
   display: block;
   font-weight: 500;
   font-size: 17px;
@@ -56,7 +56,7 @@ nav .navbar-nav .nav-item .nav-link {
 
 .navbar-toggler .line {
   height: 4px;
-  background-color: #ffffff;
+  background-color: #ac0404;
   margin-bottom: 4px;
   border-radius: 100px;
 }
