@@ -22,7 +22,7 @@ a {
 
 /* NAVBAR SECTION */
 header {
-  background: #ffffff;
+  background: #ac0404;
   padding: 10px 0;
 }
 
@@ -39,7 +39,7 @@ header .site-logo {
 }
 
 nav .navbar-nav .nav-item .nav-link {
-  color: #1f1534;
+  color: #ffffff;
   display: block;
   font-weight: 500;
   font-size: 17px;
@@ -56,7 +56,7 @@ nav .navbar-nav .nav-item .nav-link {
 
 .navbar-toggler .line {
   height: 4px;
-  background-color: #1f1534;
+  background-color: #ffffff;
   margin-bottom: 4px;
   border-radius: 100px;
 }
@@ -71,7 +71,7 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 #home {
-  padding-top: 60px;
+  padding-top: 75px;
 }
 
 .text-content h2 {
