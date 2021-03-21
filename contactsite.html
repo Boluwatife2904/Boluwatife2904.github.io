@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <style>
+        * {
+            font-family: "Nunito", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background: url(img/darkish.jpg);
+            /* background: linear-gradient(180deg, blue 0%, red 75%); */
+            min-height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #ffffff;
+            /* padding: 16em 0em 14em; */
+            text-align: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        #header::before {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            content: "";
+            background: rgba(75, 75, 93, 0.55)
+        }
+
+        #header .text {
+            margin-top: 200px;
+            /* color:#ffffff; */
+            font-size: 3em;
+            line-height: 1em;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        #header p {
+            font-size: 1.5em;
+            margin: 1.5em 0 1.5em 0;
+        }
+
+        #header a.btn {
+            color: #fff;
+            padding: 0.6em 1.4em;
+            text-decoration: none;
+            border-radius: 2px;
+            border: 1px solid rgb(247, 236, 247);
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        #header a.btn:hover {
+            background: rgba(247, 236, 247, 0.2);
+        }
+
+
+
+        #back {
+            padding: 6em 0em 4em;
+            /* background-color: #e9e51b; */
+            background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .icon {
+            font-size: 3.7em;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            display: block;
+            margin: 0 auto;
+            height: 2em;
+            line-height: 2em;
+            text-align: center;
+            width: 2em;
+            margin-bottom: 0.5em;
+            cursor: pointer;
+            transition: all 500ms ease-in-out;
+        }
+
+        .icon:hover {
+            /* color: #3ba666; */
+            border: 1px solid #29f87c;
+            transform: scale(1.1);
+        }
+
+        #fixed {
+            /* background-color: rgba(0, 0, 0, 0); */
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-image: url("img/header.jpg");
+            /* background-image: linear-gradient(180deg, rgb(49, 233, 73) 0%, rgb(69, 69, 211) 100%); */
+            background-size: auto;
+            background-origin: padding-box;
+            background-clip: border-box;
+            background-position: center;
+            padding: 6em 0em;
+            background-attachment: fixed;
+        }
+
+        #footer {
+            background-color: rgba(10, 9, 10, 0.9);
+            color: seashell;
+            padding: 10px 0;
+        }
+
+        #footer p {
+            line-height: 22px;
+            padding-top: 10px;
+        }
+
+        img.rounded-circle {
+            opacity: 0.7;
+            transition: all 500ms ease-in-out;
+            cursor: pointer;
+        }
+
+        img.rounded-circle:hover {
+            opacity: 1;
+            -moz-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        #learning {
+            padding: 80px 10px;
+            background: #42b4d6;
+            color: #ffffff;
+            min-height: 70vh;
+            /* margin-bottom: 40px; */
+        }
+
+        #learning img {
+            height: 70%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        #learning h3 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            line-height: 1.3em;
+        }
+
+        #learning p {
+            margin-bottom: 30px;
+        }
+
+        #learning a {
+            text-decoration: none;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        #header li {
+            margin-right: 20px;
+        }
+
+        #header li:last-child {
+            margin-right: 5px;
+        }
+
+        #header li a.nav-link.login {
+            /* border: 2px solid rgb(212, 0, 255); */
+            /* border-radius: 6px; */
+            color: cornsilk;
+            /* padding: 10px 20px; */
+        }
+
+        #header li a.nav-link.table {
+            /* border: 2px solid rgb(11, 235, 130); */
+            /* border-radius: 6px; */
+            color: cornsilk;
+            /* padding: 10px 20px; */
+        }
+
+        #header li a.nav-link.home {
+            /* border: 2px solid rgb(217, 255, 0); */
+            /* border-radius: 6px; */
+            color: cornsilk;
+            /* padding: 10px 20px; */
+        }
+
+
+        #gallery{
+            padding: 50px 20px;
+        }
+
+        #gallery h3{
+            color: crimson;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        #gallery img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* #header li.nav-item{
+            transition: all 500ms all ease-in-out;
+        }
+
+        #header li a.nav-link.home:hover{
+            border: 2px solid cornsilk;
+            border-radius: 40px;
+            color: rgb(217, 255, 0);
+            transition: 0.3s ease-in-out;
+        } */
+
+
+        @media screen and (max-width:768px) {
+            #header .text {
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <a class=" navbar-brand text-white" href="#">My Contacts</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item active">
+                            <a class="nav-link home" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link table" href="#">Table Mode</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link login" href="#">Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class='text'>Save my contacts</h2>
+                    <p>Need an online workspace for your contacts? You're are the right place.</p>
+                    <a href="#back" class='btn'>Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="learning" class="learning">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="img/web-design.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <h3>Saving your contacts just got easier, better and safer.</h3>
+                    <!-- <p>Get started today with a free trial and discover why thousands of students are choosing Treehouse
+                        to learn about web development, design, and business.</p> -->
+                    <p>Sign up today and start saving your contacts. You are not restricted to the number of contacts
+                        you could save so why not start now and begin saving?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="back" class="back mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-4 text-center">
+                    <h1>What We offer</h1>
+                    <p class='mb-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. corrupti qui
+                        nobis? Neque, numquam quasi.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <i class='fa fa-lock icon'></i>
+                    <h3 class='text-center my-3'>Security</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias debitis cumque non voluptatum
+                        aliquid itaque. Laborum qui enim tempora deserunt?</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class='fa fa-mobile icon'></i>
+                    <h3 class='text-center my-3'>Mobile Friendliness</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias debitis cumque non voluptatum
+                        aliquid itaque. Laborum qui enim tempora deserunt?</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class='fa fa-users icon'></i>
+                    <h3 class='text-center my-3'>For Everyone</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias debitis cumque non voluptatum
+                        aliquid itaque. Laborum qui enim tempora deserunt?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="gallery mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Our Partners</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/969.PNG" alt="" class="rounded-circle w-75 img-fluid mb-4">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/nigerianinfo.PNG" alt="" class="rounded-circle w-75 img-fluid mb-4">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/wazobia.png" alt="" class="rounded-circle w-75 img-fluid mb-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="fixed" class="fixed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-white">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fugit, sed nam
+                        quisquam nobis
+                        repellendus! A, dolor cumque illo, quae impedit nostrum quas deleniti ad laudantium deserunt
+                        ducimus odio esse.</blockquote>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <div id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Designed by Sanusi Victor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+
+</html>

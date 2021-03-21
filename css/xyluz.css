@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.total {
+    height: 100vh;
+    background: #FAF0E6;
+}
+
+a {
+    color: #4A4C59;
+    transition: all 500ms ease-in-out;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #4A4C59;
+}
+
+.home-content h4 {
+    font-size: 48px;
+    line-height: 60px;
+    color: #4A4C59;
+}
+
+.home-content p {
+    font-size: 30px;
+    line-height: 38px;
+    color: #4A4C59;
+}
+
+li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+li a {
+    font-size: 24px;
+    line-height: 30px;
+    color: #4A4C59;
+    transition: all 500ms ease-in-out;
+}
+
+li a.active {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    color: #4A4C59;
+    text-decoration-line: underline;
+    /* border-bottom: 2px solid black; */
+}
+
+li a:hover {
+    color: rgb(20, 20, 22);
+    text-decoration: none;
+}
+
+.homemargin {
+    margin-top: 110px;
+}
+
+.education-content h4,
+.work-content h4,
+.interest-content h4,
+.contact-content h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #4A4C59;
+}
+
+.education-content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    color: #4A4C59;
+}
+
+.education-content h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    color: #4A4C59;
+}
+
+.education-content p,
+.interest-content p,
+.contact-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #4A4C59;
+}
+
+.icons {
+    margin-top: 100px;
+}
+
+.interest-icons {
+    margin-top: 50px;
+}
+
+.work-content h3 {
+    font-size: 30px;
+    line-height: 38px;
+    color: #4A4C59;
+}
+
+.contact-content .contact-icons {
+    margin-left: 350px;
+    text-align: left;
+}
+
+.bottom-arrows {
+    margin-top: 85px;
+}
+
+.contact-arrow {
+    margin-top: 40px;
+}
+
+.contact-arrow .arrow,
+.education-bottom-arrows .arrow,
+.interest-bottom-arrows .arrow,
+.work-bottom-arrows .arrow,
+.home-button-arrow .arrow {
+    margin-left: 8.33333%;
+}
+
+.home-icons {
+    display: block;
+}
+
+.educationicons i,
+.workicons i,
+.interest-icons i {
+    display: block;
+}
+
+.workicons {
+    margin-top: 120px;
+}
+
+.work-bottom-arrows {
+    margin-top: 90px;
+}
+
+.education-bottom-arrows {
+    margin-top: 50px;
+}
+
+.icons-container {
+    margin-top: 40px;
+}
+
+.home-button-arrow {
+    margin-top: 50px;
+}
+
+.educationicons {
+    padding-top: 60px;
+}
+
+.contact-arrow {
+    margin-top: 140px;
+}
+
+.interest-bottom-arrows {
+    margin-top: 210px;
+}
+
+.interest-content h4 {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .contact-content .contact-icons {
+        margin-left: 70px;
+    }
+
+    .homemargin {
+        margin-top: 1px;
+    }
+
+    .home-content {
+        margin-top: 10px;
+    }
+
+    .home-content h4 {
+        font-size: 32px;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-content p {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .home-icons {
+        display: inline-block;
+        margin-right: 15px;
+        float: right;
+    }
+
+    .icons-container {
+        margin-top: 10px;
+    }
+
+    li a,
+    li a.active {
+        font-size: 18px;
+    }
+
+    .home-button-arrow {
+        margin-top: 20px;
+    }
+
+    .educationmargin,
+    .workmargin,
+    .interestmargin {
+        margin-top: -40px;
+    }
+
+    .educationmargin .education-content h4 {
+        font-size: 36px;
+    }
+
+    .educationmargin .education-content h3,
+    .educationmargin .education-content h5 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .educationmargin .education-content p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .educationicons i,
+    .workicons i,
+    .interest-icons i {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .educationicons i,
+    .workicons i,
+    .interest-icons i {
+        float: right;
+    }
+
+    .educationicons,
+    .workicons,
+    .interest-icons {
+        padding-top: 0;
+    }
+
+    .interest-content h4 {
+        margin-bottom: 35px;
+    }
+
+    .interest-icons {
+        margin-top: 15px;
+    }
+
+    .interest-bottom-arrows {
+        margin-top: 80px;
+    }
+
+    .contact-arrow {
+        margin-top: 100px;
+    }
+
+    .workicons {
+        margin-top: 3px;
+    }
+
+    .work-bottom-arrows {
+        margin-top: 50px;
+    }
+
+    .educationicons {
+        margin-top: 0px;
+    }
+
+    .contact-arrow .arrow {
+        margin-left: 40.33333%;
+    }
+
+    .education-bottom-arrows {
+        margin-top: 40px;
+    }
+
+    .education-bottom-arrows .arrow {
+        margin-left: 40.33333%;
+    }
+
+    .work-bottom-arrows .arrow {
+        margin-left: 40.33333%;
+    }
+
+    .home-button-arrow .arrow {
+        margin-left: 40.33333%;
+    }
+
+    .interest-bottom-arrows .arrow {
+        margin-left: 40.33333%;
+    }
+}
