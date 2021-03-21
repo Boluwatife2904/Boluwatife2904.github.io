@@ -39,7 +39,7 @@ header .site-logo {
 }
 
 nav .navbar-nav .nav-item .nav-link {
-  color: #ac0404;
+  color: #ac0404 !important;
   display: block;
   font-weight: 500;
   font-size: 17px;
