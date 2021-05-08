@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 300;
+  src: local("Gilroy"), url(../fonts/Gilroy-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  src: local("Gilroy"), url(../fonts/Gilroy-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: local("Gilroy"), url(../fonts/Gilroy-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  src: local("Gilroy"), url(../fonts/Gilroy-SemiBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 700;
+  src: local("Gilroy"), url(../fonts/Gilroy-Bold.otf) format("opentype");
+}
+
+/* START CSS RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::focus,
+*::active {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+.promotion {
+  background-color: blueviolet;
+  padding: 8px 30px;
+  margin-bottom: 20px;
+}
+
+.promotion h6 {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.promotion h6 span {
+  font-size: 24px;
+  margin: auto 10px;
+}
+
+/* SHOP HEADER */
+.shop-header {
+  margin-bottom: 30px;
+}
+
+.shop-header .about-shop {
+  display: flex;
+  /* align-items: center; */
+  padding: 20px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 15px;
+}
+
+.shop-header .about-shop .shop-logo {
+  margin-right: 30px;
+}
+
+.shop-header .about-shop .shop-logo img {
+  border-radius: 15px;
+  height: 170px;
+}
+
+.shop-header .about-shop .shop-information h3 {
+  font-weight: 600;
+}
+
+.shop-header .about-shop .shop-information p {
+  color: rgb(185, 185, 185);
+}
+
+.shop-header .about-shop .shop-information .shop-perks .single-perk {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.shop-header .about-shop .shop-information .shop-perks .single-perk span {
+  display: block;
+}
+
+.shop-header .about-shop .shop-information .shop-perks .single-perk i {
+  font-size: 26px;
+  margin-right: 8px;
+}
+
+.shop-header .shop-contact-menu {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 15px;
+  height: 100%;
+}
+
+.shop-header .shop-contact-menu li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.shop-header .shop-contact-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.shop-header .shop-contact-menu li i {
+  font-size: 24px;
+  margin-right: 6px;
+}
+
+.shop-header .shop-contact-menu li span {
+  font-size: 18px;
+}
+/* END SHOP HEADER */
+
+/* PRODUCT ITEM */
+.product-item {
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.product-item-image {
+  display: flex;
+}
+
+.product-item-image img {
+  width: 85%;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.product-item-image .product-item-link {
+  list-style: none;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-item-image .product-item-link li {
+  margin-bottom: 14px;
+}
+
+.product-item-image .product-item-link li a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #222;
+}
+
+.product-item-information {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.product-item-information .product-item-details {
+  margin-right: 15px;
+}
+
+.product-item-information .brand-name {
+  color: #809db9;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-item-information .price {
+  display: flex;
+  align-items: baseline;
+}
+
+.product-item-information .product-name {
+  color: #222;
+  font-weight: 700;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-item-information .price .new-price {
+  color: #009e0f;
+  font-weight: 600;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.product-item-information .price .old-price {
+  text-decoration: line-through;
+  color: rgb(120, 120, 120);
+  font-weight: 500;
+}
+
+.product-item-information .product-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: rgb(120, 120, 120);
+}
+
+.product-item-qrcode img {
+  height: 110px;
+  width: 280px;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+/* FOOTER SECTION */
+.footer {
+  border-top: 1px solid #eee;
+  padding: 20px 10px 10px;
+}
+
+.footer .footer-copyright p {
+  color: rgb(120, 120, 120);
+  font-weight: 500;
+}
+
+.footer .footer-social-media {
+  list-style: none;
+}
+
+.footer .footer-social-media li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer .footer-social-media li a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 44px;
+  font-size: 24px;
+}
+
+.footer .footer-social-media li a.facebook {
+  background-color: #3b5999;
+}
+
+.footer .footer-social-media li a.instagram {
+  background-color: #ef2145;
+}
+
+.footer .footer-social-media li a.youtube {
+  background-color: #cb2026;
+}
+
+@media screen and (max-width: 460px) {
+  .shop-header .about-shop {
+    padding: 0;
+    border: none;
+  }
+
+  .shop-header .about-shop .shop-logo {
+    margin-right: 15px;
+  }
+  
+  .shop-header .about-shop .shop-logo img {
+    border-radius: 15px;
+    height: 140px;
+    width: 140px;
+  }
+
+  .shop-header .about-shop .shop-information h3 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  
+  .shop-header .about-shop .shop-information p {
+    font-size: 14px;
+  }
+
+  .shop-header .about-shop .shop-information .shop-perks .single-perk span {
+    font-size: 14px;
+  }
+  
+  .shop-header .about-shop .shop-information .shop-perks .single-perk i {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+
+@media (min-width:500px) and (max-width: 768px) {
+  .product-item-qrcode img {
+    width: 170px;
+  }
+}
