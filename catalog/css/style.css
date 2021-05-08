@@ -76,7 +76,6 @@ body {
 
 .shop-header .about-shop {
   display: flex;
-  /* align-items: center; */
   padding: 20px;
   border: 1px solid rgb(220, 220, 220);
   border-radius: 15px;
@@ -103,10 +102,6 @@ body {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
-}
-
-.shop-header .about-shop .shop-information .shop-perks .single-perk span {
-  display: block;
 }
 
 .shop-header .about-shop .shop-information .shop-perks .single-perk i {
@@ -181,8 +176,6 @@ body {
 
 .product-item-information {
   margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
   padding: 10px 20px;
 }
 
@@ -256,21 +249,12 @@ body {
   font-weight: 500;
 }
 
-.footer .footer-social-media {
-  list-style: none;
-}
-
 .footer .footer-social-media li {
-  margin-right: 10px;
-  display: inline-block;
+  margin-right: 10px
 }
 
 .footer .footer-social-media li a {
-  text-decoration: none;
   outline: none;
-  display: block;
-  text-align: center;
-  color: #fff;
   border-radius: 50px;
   width: 40px;
   height: 40px;
@@ -292,6 +276,13 @@ body {
 
 .footer .footer-social-media li a.youtube {
   background-color: #cb2026;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:500px) and (max-width: 768px) {
+  .product-item-qrcode img {
+    width: 170px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -331,12 +322,5 @@ body {
 
   .product-item-information {
     padding: 10px;
-  }
-}
-
-
-@media (min-width:500px) and (max-width: 768px) {
-  .product-item-qrcode img {
-    width: 170px;
   }
 }
