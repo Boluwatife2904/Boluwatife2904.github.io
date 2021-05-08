@@ -174,7 +174,7 @@ body {
 }
 
 .product-item-image .product-item-link li a {
-  font-size: 24px;
+  font-size: 28px;
   text-decoration: none;
   color: #222;
 }
@@ -320,6 +320,10 @@ body {
   .shop-header .about-shop .shop-information .shop-perks .single-perk i {
     font-size: 20px;
     line-height: normal;
+  }
+
+  .product-item-information {
+    padding: 10px;
   }
 }
 
