@@ -211,6 +211,12 @@ body {
   overflow: hidden;
 }
 
+.product-item-information .product-name a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
 .product-item-information .price .new-price {
   color: #009e0f;
   font-weight: 600;
