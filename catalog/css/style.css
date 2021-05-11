@@ -132,21 +132,23 @@ body {
 
 .shop-header .shop-contact-menu li {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .shop-header .shop-contact-menu li:last-child {
   margin-bottom: 0;
 }
 
+.shop-header .shop-contact-menu li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
 .shop-header .shop-contact-menu li i {
   font-size: 24px;
   margin-right: 6px;
-}
-
-.shop-header .shop-contact-menu li span {
-  font-size: 18px;
 }
 /* END SHOP HEADER */
 
