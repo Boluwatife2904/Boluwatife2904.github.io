@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+
+// VARIABLES
+$light-grayish-blue: hsl(210, 46%, 95%);
+$dark-grayish-blue: hsl(217, 19%, 35%);
+$paragraph-text: rgba(207, 207, 207, 0.5);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    max-width: 1440px;
+    margin: 50px auto;
+    background-color: $light-grayish-blue;
+}
+
+// TESTIMONIALS GRID LAYOUT
+.testimonials {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    @media screen and (min-width: 800px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    // SINGLE TESTIMONIAL
+    .testimonial {
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 6px 60px 2px $paragraph-text;
+
+        &-author {
+            display: flex;
+            margin-bottom: 20px;
+
+            &-image {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            &-details {
+                margin-left: 20px;
+
+                h4 {
+                    color: hsl(0, 0%, 81%);
+
+                    &.grayish {
+                        color: $dark-grayish-blue;
+                    }
+                }
+
+                p {
+                    color: $paragraph-text;
+
+                    &.grayish {
+                        color: rgba(72, 85, 106, 0.5);
+                    }
+                }
+            }
+        }
+
+        &-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: $light-grayish-blue;
+            line-height: 32px;
+
+            &.grayish {
+                color: $dark-grayish-blue;
+            }
+
+            @media screen and (min-width: 800px) {
+                font-size: 26px;
+            }
+        }
+
+        &-paragraph {
+            line-height: 24px;
+            font-weight: 500;
+            color: rgba(207, 207, 207, 0.7);
+            font-size: 17px;
+
+            &.grayish {
+                color: rgba(25, 33, 46, 0.7);
+            }
+        }
+
+        &.daniel-testimonial {
+            background-color: hsl(263, 55%, 52%);
+            position: relative;
+            z-index: 1;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                background: url("../images/bg-pattern-quotation.svg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                top: 0;
+                right: 35px;
+                height: 135px;
+                width: 120px;
+                z-index: -1;
+            }
+
+            @media screen and (min-width: 800px) {
+                grid-column: 1 / span 2;
+                
+                &::after {
+                    right: 115px;
+                }
+            }
+        }
+
+        &.jonathan-testimonial {
+            background-color: $dark-grayish-blue;
+        }
+
+        &.jeanette-testimonial {
+            background-color: white;
+        }
+
+        &.patrick-testimonial {
+            background-color: hsl(219, 29%, 14%);
+
+            @media screen and (min-width: 800px) {
+                grid-column: 2 / span 2;
+            }
+        }
+        
+        &.kira-testimonial {
+            background-color: white;
+
+            @media screen and (min-width: 800px) {
+                grid-column: 1 / span 3;
+            }
+
+            @media screen and (min-width: 1200px) {
+                grid-column: 4;
+                grid-row: 1 / span 2;
+            }   
+        }
+    }
+}
+
+// ATTRIBUTION
+.attribution { font-size: 16px; text-align: center; margin-top: 50px; }
+.attribution a { color: hsl(228, 45%, 44%); }

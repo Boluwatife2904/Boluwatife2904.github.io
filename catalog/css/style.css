@@ -267,7 +267,8 @@ body {
 .single-product .single-product-qrcode {
   height: 100px;
   width: 100px;
-  max-width: 100px;
+  max-width: 105px;
+  max-height: 105px;
   flex-shrink: 0;
 }
 
