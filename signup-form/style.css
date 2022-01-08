@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 60px auto 10px;
+  padding: 20px;
+}
+
+.right-side,
+.left-side {
+  flex: 1;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 550px;
+}
+
+/* LEFT SIDE CONTAINER */
+.left-side h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.left-side p {
+  line-height: 28px;
+  font-weight: 500;
+}
+
+/* RIGHT SIDE CONTAINER */
+.right-side .header {
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  padding: 16px 60px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px rgba(34, 34, 34, 0.2);
+}
+
+.right-side .header p {
+  font-weight: 600;
+}
+
+.right-side .header p span {
+  font-weight: 500;
+  color: hsl(246, 25%, 77%);
+}
+
+.right-side form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px rgba(34, 34, 34, 0.2);
+}
+
+.right-side form .form-element {
+  margin-bottom: 20px;
+}
+
+.right-side form .form-element input {
+  font: inherit;
+  width: 100%;
+  padding: 16px 30px;
+  background: transparent;
+  color: hsl(249, 10%, 26%);
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  caret-color: hsl(248, 32%, 49%);
+  transition: all 0.3s linear;
+}
+
+.right-side form .form-element input:focus {
+  border-color: hsl(248, 32%, 49%);
+  border-width: 1.5px;
+}
+
+.right-side form .submit {
+  cursor: pointer;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 2px rgba(34, 34, 34, 0.35);
+}
+
+.right-side form small {
+  display: block;
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.right-side form small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url("./images/bg-intro-mobile.png");
+  }
+  
+  .left-side h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
