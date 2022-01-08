@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    margin: 50px auto;
+    padding: 10px;
+}
+
+// PRICING CONTAINER
+.pricing-container {
+    width: 95%;
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 60px 3px rgba(207,207,207, 0.7);
+    overflow: hidden;
+    display: grid;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// JOIN OUR COMMUNITY
+.join-our-community {
+    padding: 30px;
+    background-color: #fff;
+
+    @media screen and (min-width: 768px) {
+        grid-column: span 2;
+        padding: 40px;
+    }
+
+    h4 {
+        font-size: 20px;
+        color: hsl(179, 62%, 43%);
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    h6 {
+        color: hsl(71, 73%, 54%);
+        font-size: 18px;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        color: hsl(218, 22%, 67%);
+        line-height: 28px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+        }
+    }
+}
+
+// MONTHLY SUBSCRIPTION
+.pricing {
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px;
+    }
+
+    &-header {
+        color: hsl(204, 43%, 93%);
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    &-amount {
+        display: flex;
+        align-items: center;
+        color: hsl(204, 43%, 93%);
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 10px;
+            color: rgba(229, 239, 245, 0.8);
+        }
+    }
+
+    &-perk {
+        color: hsl(204, 43%, 93%);
+        margin-bottom: 35px;
+        
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    button {
+        font: inherit;
+        border: none;
+        outline: none;
+        background-color: hsl(71, 73%, 54%);
+        color: hsl(203, 100%, 97%);
+        padding: 16px 20px;
+        width: 100%;
+        border-radius: 6px;
+        font-weight: 600;
+    }
+}
+
+// WHY US
+.why-us {
+    padding: 30px;
+    background-color: rgba(42, 178, 175, 0.7);
+
+    @media screen and (min-width: 768px) {
+        padding: 40px;
+    }
+    
+    &-header {
+        color: hsl(204, 43%, 93%);
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    p {
+        color: rgba(229, 239, 245, 0.8);
+        line-height: 24px;
+    }
+}
+
+.attribution { font-size: 16px; text-align: center; margin-top: 50px; }
+.attribution a { color: hsl(228, 45%, 44%); }

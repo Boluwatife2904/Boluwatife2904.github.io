@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.pricing-container {
+  width: 95%;
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 60px 3px rgba(207, 207, 207, 0.7);
+          box-shadow: 0 6px 60px 3px rgba(207, 207, 207, 0.7);
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .pricing-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.join-our-community {
+  padding: 30px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .join-our-community {
+    grid-column: span 2;
+    padding: 40px;
+  }
+}
+
+.join-our-community h4 {
+  font-size: 20px;
+  color: #2ab2af;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .join-our-community h4 {
+    font-size: 24px;
+  }
+}
+
+.join-our-community h6 {
+  color: #c0df34;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .join-our-community h6 {
+    font-size: 20px;
+  }
+}
+
+.join-our-community p {
+  color: #98a6bd;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .join-our-community p {
+    font-size: 18px;
+  }
+}
+
+.pricing {
+  background-color: #2ab2af;
+  padding: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .pricing {
+    padding: 40px;
+  }
+}
+
+.pricing-header {
+  color: #e5eff5;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.pricing-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e5eff5;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pricing-amount span {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 10px;
+  color: rgba(229, 239, 245, 0.8);
+}
+
+.pricing-perk {
+  color: #e5eff5;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .pricing-perk {
+    font-size: 18px;
+  }
+}
+
+.pricing button {
+  font: inherit;
+  border: none;
+  outline: none;
+  background-color: #c0df34;
+  color: #f0f9ff;
+  padding: 16px 20px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.why-us {
+  padding: 30px;
+  background-color: rgba(42, 178, 175, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .why-us {
+    padding: 40px;
+  }
+}
+
+.why-us-header {
+  color: #e5eff5;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.why-us p {
+  color: rgba(229, 239, 245, 0.8);
+  line-height: 24px;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
